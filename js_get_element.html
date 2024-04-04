@@ -1,0 +1,37 @@
+<html>
+<head>
+	
+	<title> SAMPLE PAGE</title>
+	
+</head>
+<body>
+	
+	<div id="txt1" class="c1">SATYA.N.</div>
+	<div id="txt2" class="c1">Lee.</div>
+	<div id="txt3" class="c1">Dawn.</div>
+
+	<!-- <input type="submit" />
+
+	<input type="button" value="click me"/>
+
+	<button type="submit" value="click me"> push me</button> -->
+
+	<button id="btn1" onclick="a();">DO some thing</button>
+	
+	<script>
+		console.log("TEST1");
+		function a(){
+			var x= document.getElementsByClassName("c1");
+			for(var i=0;i<x.length;i++){
+				x[i].style.color="BLUE";
+				x[i].style.fontWeight="BOLD";
+				var temp =x[i].innerText.replaceAll('A','@');
+				x[i].innerText = temp;
+			}
+			// document.getElementById("txt1").style.color="GREEN";
+			// document.getElementById("txt1").style.fontWeight="BOLD";
+		}
+	</script>
+	
+</body>
+</html>
